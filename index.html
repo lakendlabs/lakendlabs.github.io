@@ -5,13 +5,42 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
   <title>Lakend Labs</title>
+  <style>
+    body {
+      background-color: #c3c3c3;
+      font-family: 'Faster One' ;
+    }
+    #logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -150px;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        font-size: 32px;
+    }
+    svg {
+      color: #efefef;
+    }
+  </style>
 </head>
 
 <body>
-
-<p>Welcome to Lakend Labs!</p>
-
+<div id="logo">
+  <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512">
+    <title>{{name}}</title>
+    <polygon :fill="color" points="486.8,437.7 402.9,292.3 360.9,292.3 360.9,292.3 339.9,328.7 381.9,328.7 444.8,437.7 151.1,437.7
+      277,219.7 256,183.3 88.2,474 465.8,474 465.8,474 "/>
+    <polygon :fill="color" points="318.9,219.7 214,401.4 381.9,401.4 360.9,365 277,365 360.9,219.7 256,38 25.2,437.7 46.2,474
+      256,110.7 "/>
+  </svg>
+  Lakend Labs
+</div>
 </body>
 
 </html>
